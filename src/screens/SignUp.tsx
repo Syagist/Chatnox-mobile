@@ -7,6 +7,7 @@ import {sign_up} from "@/styles/sreens/signUp";
 import LogoIcon from "@/components/icons/LogoIcon";
 import {useAppDispatch} from "@/store/store";
 import {useLoader} from "@/context/LoaderProvider";
+import FacebookLogin from "@/components/form/social/FacebookLoginButton";
 
 const SignUp = () => {
     const [userName, setUserName] = useState('');
@@ -39,6 +40,8 @@ const SignUp = () => {
                             <LogoIcon/>
                         </View>
                     </View>
+                    <FacebookLogin/>
+
                     <View style={sign_up.title_wrapper}>
                         <Text style={sign_up.title}>
                             Connect friends {'\n'}
