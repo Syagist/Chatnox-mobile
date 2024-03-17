@@ -11,9 +11,8 @@ export const globalStyles = StyleSheet.create({
         height: '100%',
         backgroundColor: COLOR_WHITE,
     },
-    app_navigation: {
-
-    },
+    wrapper: {},
+    app_navigation: {},
     app_navigation_label: {
         textAlign: "center",
         fontSize: 10,
@@ -21,6 +20,9 @@ export const globalStyles = StyleSheet.create({
         fontWeight: "400",
         textTransform: 'capitalize'
     },
-    scrollViewContainer: {},
+    scrollViewContainer: {
+        flex: 1,
+        height: '100%'
+    },
 
 });
