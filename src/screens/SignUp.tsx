@@ -1,80 +1,51 @@
 import React from 'react';
-import {Image, ScrollView, Text, TouchableOpacity, View} from "react-native";
+import {ScrollView, Text, View} from "react-native";
 import {globalStyles} from "@/styles/globalStyles";
-import {start} from "@/styles/sreens/start";
-import LogoIcon from "@/components/icons/LogoIcon";
-import FacebookLogin from "@/components/form/social/FacebookSignInButton";
-import GoogleLogin from "@/components/form/social/GoogleSignInButton";
-import IosLogin from "@/components/form/social/IosSignInButton";
-import {socialButton} from "@/styles/components/form/social/socialButton";
-import {COLOR_BLACK, COLOR_DARK_GREY, COLOR_WHITE} from "@/constants/Colors";
-import ButtonPrimary from "@/components/form/ButtonPrimary";
-import {RootStackParamList} from "@/interfaces/RootStackParamList";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {useNavigation} from "@react-navigation/native";
+import FacebookSignIn from "@/components/form/social/FacebookSignInButton";
+import GoogleSignIn from "@/components/form/social/GoogleSignInButton";
+import IosSignIn from "@/components/form/social/IosSignInButton";
+import {socialButton} from "@/styles/components/form/social/socialButton";
+import {COLOR_BLACK} from "@/constants/Colors";
+import {RootStackParamList} from "@/interfaces/RootStackParamList";
+import {signIn} from "@/styles/sreens/signIn";
+import BackArrowNav from "@/navigation/BackArrowNav";
+import GuestText from "@/components/GuestText";
+import SignUpForm from "@/components/form/SignUpForm";
+import {UserSignUpRequest} from "@/interfaces/user/AuthState";
 
 const SignUp = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
-    const redirectToSignUp = () => {
-
-    };
-
-    const redirectToLogin = () => {
+    const sendSignUpRequest = (userSignUpRequest: UserSignUpRequest) => {
+        console.log(userSignUpRequest)
     };
 
     return (
         <ScrollView contentContainerStyle={globalStyles.scrollViewContainer}>
             <View style={{
                 ...globalStyles.container,
-                ...start.container
+                ...signIn.container
             }}>
-                <View style={start.wrapper}>
-                    <View style={start.gradient_wrapper}>
-                        <Image style={start.gradient_image} source={require('../assets/images/gradient.png')}/>
-                    </View>
-                    <View style={start.logo_wrapper}>
-                        <View style={start.logo}>
-                            <LogoIcon/>
-                        </View>
-                    </View>
-                    <View style={start.title_wrapper}>
-                        <Text style={start.title}>
-                            Sign Up {'\n'}
-                            <Text style={start.title_bold}>
-                                easily & quickly
-                            </Text>
-                        </Text>
-                        <Text style={start.description}>
-                            Our chat app is the perfect way to stay connected with friends and family.
-                        </Text>
-                    </View>
+                <BackArrowNav/>
+                <GuestText
+                    title={'Sign Up to Chatbox'}
+                    text={'Create Account and chat with your friends and family'}/>
+                <View style={signIn.wrapper}>
                     <View style={socialButton.buttons_box}>
-                        <FacebookLogin color={COLOR_DARK_GREY}/>
-                        <GoogleLogin color={COLOR_DARK_GREY}/>
-                        <IosLogin color={COLOR_DARK_GREY}/>
-                    </View>
-                    <View style={socialButton.variant_box}>
-                        <View style={socialButton.variant_line}></View>
-                        <Text style={socialButton.variant_text}>OR</Text>
-                        <View style={socialButton.variant_line}></View>
-                    </View>
-                    <View style={start.input_wrapper}>
-                        <ButtonPrimary text='Sign up withn mail'
-                                       onPress={redirectToSignUp}
-                                       color={COLOR_BLACK}
-                                       backgroundColor={COLOR_WHITE}/>
-                    </View>
-
-                    <View style={start.login}>
-                        <Text style={socialButton.variant_text}>Existing account?</Text>
-                        <TouchableOpacity
-                            activeOpacity={0.9}
-                            onPress={redirectToLogin}>
-                            <Text style={start.loginText}>Log in</Text>
-                        </TouchableOpacity>
+                        <FacebookSignIn color={COLOR_BLACK}/>
+                        <GoogleSignIn color={COLOR_BLACK}/>
+                        <IosSignIn color={COLOR_BLACK}/>
                     </View>
                 </View>
+                <View style={socialButton.variant_box}>
+                    <View style={socialButton.variant_line}></View>
+                    <Text style={socialButton.variant_text}>OR</Text>
+                    <View style={socialButton.variant_line}></View>
+                </View>
+
+                <SignUpForm onSignUpSubmit={sendSignUpRequest}/>
             </View>
         </ScrollView>
     );

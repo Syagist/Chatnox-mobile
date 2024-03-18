@@ -8,8 +8,8 @@ export const globalStyles = StyleSheet.create({
         paddingBottom: 24,
         paddingLeft: APP_LEFT_PADDING,
         paddingRight: APP_RIGHT_PADDING,
-        height: '100%',
         backgroundColor: COLOR_WHITE,
+        flex: 1
     },
     wrapper: {},
     app_navigation: {},
@@ -21,8 +21,7 @@ export const globalStyles = StyleSheet.create({
         textTransform: 'capitalize'
     },
     scrollViewContainer: {
-        flex: 1,
-        height: '100%'
+        minHeight: '100%'
     },
 
 });

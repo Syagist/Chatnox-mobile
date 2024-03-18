@@ -9,5 +9,5 @@ export const COLOR_LIGHT_GREY =  '#CDD1D0';
 export const COLOR_DARKER_GREY =  '#797C7B';
 
 export const COLOR_BLACK =  '#000000';
-export const COLOR_RED =  '#F34040';
+export const COLOR_RED =  '#FF2D1B';
 

@@ -22,11 +22,9 @@ const FacebookSignInButton = ({color}: SocialButtonProps) => {
             console.log(gago)
             //
             // if (type === 'success') {
-            //     // Get the user's info using the token
             //     const response = await fetch(`https://graph.facebook.com/me?access_token=${token}`);
             //     const userData = await response.json();
             //     console.log(userData);
-            //     // You can do something with the userData, like storing it in your app's state
             // } else {
             //     setErrorMsg('Facebook login failed');
             // }

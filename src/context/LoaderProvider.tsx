@@ -27,5 +27,4 @@ export const LoaderProvider = ({children}: any) => {
     );
 };
 
-// Custom hook to access loader context
 export const useLoader = () => useContext(LoaderContext);
