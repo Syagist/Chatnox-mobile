@@ -37,5 +37,4 @@ export const guestText = StyleSheet.create({
         color: COLOR_DARKER_GREY,
         fontWeight: '500'
     }
-
 });

@@ -9,7 +9,7 @@ import IosSignIn from "@/components/form/social/IosSignInButton";
 import {socialButton} from "@/styles/components/form/social/socialButton";
 import {COLOR_BLACK} from "@/constants/Colors";
 import {RootStackParamList} from "@/interfaces/RootStackParamList";
-import {signIn} from "@/styles/sreens/signIn";
+import {signIn} from "@/styles/sreens/auth/signIn";
 import BackArrowNav from "@/navigation/BackArrowNav";
 import GuestText from "@/components/GuestText";
 import SignInForm from "@/components/form/SignInForm";

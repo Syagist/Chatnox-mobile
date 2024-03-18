@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavigationContainer} from "@react-navigation/native";
 import {createStackNavigator} from "@react-navigation/stack";
-import SignIn from "@/screens/SignIn";
-import SignUp from "@/screens/SignUp";
+import SignIn from "@/screens/auth/SignIn";
+import SignUp from "@/screens/auth/SignUp";
 import Start from "@/screens/Start";
 
 

@@ -9,7 +9,7 @@ import IosSignIn from "@/components/form/social/IosSignInButton";
 import {socialButton} from "@/styles/components/form/social/socialButton";
 import {COLOR_BLACK} from "@/constants/Colors";
 import {RootStackParamList} from "@/interfaces/RootStackParamList";
-import {signIn} from "@/styles/sreens/signIn";
+import {signUp} from "@/styles/sreens/auth/signUp";
 import BackArrowNav from "@/navigation/BackArrowNav";
 import GuestText from "@/components/GuestText";
 import SignUpForm from "@/components/form/SignUpForm";
@@ -26,13 +26,13 @@ const SignUp = () => {
         <ScrollView contentContainerStyle={globalStyles.scrollViewContainer}>
             <View style={{
                 ...globalStyles.container,
-                ...signIn.container
+                ...signUp.container
             }}>
                 <BackArrowNav/>
                 <GuestText
                     title={'Sign Up to Chatbox'}
                     text={'Create Account and chat with your friends and family'}/>
-                <View style={signIn.wrapper}>
+                <View style={signUp.wrapper}>
                     <View style={socialButton.buttons_box}>
                         <FacebookSignIn color={COLOR_BLACK}/>
                         <GoogleSignIn color={COLOR_BLACK}/>

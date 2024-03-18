@@ -7,7 +7,7 @@ import * as yup from "yup";
 import {UserSignUpRequest} from "@/interfaces/user/AuthState";
 import ButtonPrimary from "@/components/form/ButtonPrimary";
 import ButtonTransparent from "@/components/form/ButtonTransparent";
-import {signUp} from "@/styles/sreens/signUp";
+import {signUp} from "@/styles/sreens/auth/signUp";
 
 interface SignUpFromProps {
     onSignUpSubmit: (userSignUpRequest: UserSignUpRequest) => void
