@@ -55,6 +55,7 @@ const SignInForm = ({onSignInSubmit}: SignInFromProps) => {
 
                 <Controller
                     control={control}
+                    name="password"
                     render={({field: {onChange, onBlur, value}}) => (
                         <InputText label={'Password'}
                                    type={'password'}
@@ -62,8 +63,6 @@ const SignInForm = ({onSignInSubmit}: SignInFromProps) => {
                                    onBlur={onBlur}
                                    onChange={onChange}/>
                     )}
-                    name="password"
-                    defaultValue=""
                 />
             </View>
             <View>
@@ -72,7 +71,6 @@ const SignInForm = ({onSignInSubmit}: SignInFromProps) => {
                 <ButtonTransparent text='Forgot password?'
                                    onPress={openForgotPasswordPage}/>
             </View>
-
         </View>
     );
 };

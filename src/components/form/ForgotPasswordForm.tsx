@@ -34,6 +34,7 @@ const ForgotPasswordForm = ({onForgotPasswordSubmit}: ForgotPasswordFromProps) =
             <View style={forgotPassword.forgot_password_input_wrapepr}>
                 <Controller
                     control={control}
+                    name="phone"
                     render={({field: {onChange, onBlur}}) => (
                         <InputText label={'Your phone'}
                                    type={'phone'}
@@ -41,8 +42,6 @@ const ForgotPasswordForm = ({onForgotPasswordSubmit}: ForgotPasswordFromProps) =
                                    onBlur={onBlur}
                                    onChange={onChange}/>
                     )}
-                    name="phone"
-                    defaultValue=""
                 />
             </View>
             <ButtonPrimary text='Submit'

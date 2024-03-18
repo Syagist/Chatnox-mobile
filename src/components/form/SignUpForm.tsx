@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {Controller, useForm} from "react-hook-form";
 import {yupResolver} from "@hookform/resolvers/yup";
 import {Text, View} from "react-native";
@@ -7,7 +7,6 @@ import * as yup from "yup";
 import {UserSignUpRequest} from "@/interfaces/user/AuthState";
 import ButtonPrimary from "@/components/form/ui/ButtonPrimary";
 import {signUp} from "@/styles/sreens/auth/signUp";
-import PhoneInput from "react-native-phone-number-input";
 import {inputText} from "@/styles/components/form/ui/inputText";
 import InputPhone from "@/components/form/ui/InputPhone";
 
