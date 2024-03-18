@@ -15,7 +15,9 @@ interface ForgotPasswordFromProps {
 const ForgotPasswordForm = ({onForgotPasswordSubmit}: ForgotPasswordFromProps) => {
 
     const schema = yup.object().shape({
-        email: yup.string().email('Invalid email').required('Email is required'),
+        phone: yup.string()
+            .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
+            .required('Phone is required'),
     });
 
     const {control, handleSubmit, formState: {errors}} = useForm({
@@ -33,13 +35,13 @@ const ForgotPasswordForm = ({onForgotPasswordSubmit}: ForgotPasswordFromProps) =
                 <Controller
                     control={control}
                     render={({field: {onChange, onBlur}}) => (
-                        <InputText label={'Your email'}
-                                   type={'email'}
-                                   error={errors.email}
+                        <InputText label={'Your phone'}
+                                   type={'phone'}
+                                   error={errors.phone}
                                    onBlur={onBlur}
                                    onChange={onChange}/>
                     )}
-                    name="email"
+                    name="phone"
                     defaultValue=""
                 />
             </View>

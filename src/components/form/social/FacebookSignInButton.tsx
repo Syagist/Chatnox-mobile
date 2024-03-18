@@ -16,7 +16,7 @@ const FacebookSignInButton = ({color}: SocialButtonProps) => {
             });
 
             const gago = await Facebook.logInWithReadPermissionsAsync({
-                permissions: ['public_profile', 'email'],
+                permissions: ['public_profile', 'phone'],
             });
 
             console.log(gago)

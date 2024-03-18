@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {Controller, useForm} from "react-hook-form";
 import {yupResolver} from "@hookform/resolvers/yup";
-import {View} from "react-native";
+import {Text, View} from "react-native";
 import InputText from "@/components/form/ui/InputText";
 import * as yup from "yup";
 import {UserSignUpRequest} from "@/interfaces/user/AuthState";
 import ButtonPrimary from "@/components/form/ui/ButtonPrimary";
-import ButtonTransparent from "@/components/form/ui/ButtonTransparent";
 import {signUp} from "@/styles/sreens/auth/signUp";
+import PhoneInput from "react-native-phone-number-input";
+import {inputText} from "@/styles/components/form/ui/inputText";
+import InputPhone from "@/components/form/ui/InputPhone";
 
 interface SignUpFromProps {
     onSignUpSubmit: (userSignUpRequest: UserSignUpRequest) => void
@@ -15,7 +17,7 @@ interface SignUpFromProps {
 
 const SignUpForm = ({onSignUpSubmit}: SignUpFromProps) => {
     const schema = yup.object().shape({
-        email: yup.string().email('Invalid email').required('Email is required'),
+        phone: yup.string().required('Phone is required'),
         name: yup.string().required('Name is required'),
         password: yup.string().required('Password is required'),
         confirmPassword: yup.string().required('Confirm Password is required'),
@@ -34,6 +36,7 @@ const SignUpForm = ({onSignUpSubmit}: SignUpFromProps) => {
             <View>
                 <Controller
                     control={control}
+                    name="name"
                     render={({field: {onChange, onBlur}}) => (
                         <InputText label={'Your name'}
                                    type={'text'}
@@ -41,23 +44,27 @@ const SignUpForm = ({onSignUpSubmit}: SignUpFromProps) => {
                                    onBlur={onBlur}
                                    onChange={onChange}/>
                     )}
-                    name="name"
                 />
+                <View style={inputText.wrapper}>
+                    <Text
+                        style={[
+                            inputText.label,
+                            errors.phone && inputText.error_label
+                        ]}>
+                        Phone
+                    </Text>
+                    <Controller
+                        control={control}
+                        name="phone"
+                        render={({field: {onChange}}) => (
+                            <InputPhone label={"Your Phone"} error={errors.phone} onChange={onChange}/>
+                        )}
+                    />
+                </View>
+
                 <Controller
                     control={control}
-                    render={({field: {onChange, onBlur}}) => (
-                        <InputText label={'Your email'}
-                                   type={'email'}
-                                   error={errors.email}
-                                   onBlur={onBlur}
-                                   onChange={onChange}/>
-                    )}
-                    name="email"
-                />
-
-
-                <Controller
-                    control={control}
+                    name="password"
                     render={({field: {onChange, onBlur}}) => (
                         <InputText label={'Password'}
                                    type={'password'}
@@ -65,11 +72,11 @@ const SignUpForm = ({onSignUpSubmit}: SignUpFromProps) => {
                                    onBlur={onBlur}
                                    onChange={onChange}/>
                     )}
-                    name="password"
                 />
 
                 <Controller
                     control={control}
+                    name="confirmPassword"
                     render={({field: {onChange, onBlur}}) => (
                         <InputText label={'Confirm Password'}
                                    type={'password'}
@@ -77,11 +84,10 @@ const SignUpForm = ({onSignUpSubmit}: SignUpFromProps) => {
                                    onBlur={onBlur}
                                    onChange={onChange}/>
                     )}
-                    name="confirmPassword"
                 />
             </View>
             <View>
-                <ButtonPrimary text='Sign up withn mail'
+                <ButtonPrimary text='Sign up withn phone'
                                onPress={handleSubmit(onSubmit)}/>
             </View>
 

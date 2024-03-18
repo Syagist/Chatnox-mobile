@@ -24,7 +24,7 @@ const ForgotPassword = () => {
                 <BackArrowNav/>
                 <GuestText
                     title={'Reset Password'}
-                    text={'To reset password fill your email'}/>
+                    text={'To reset password fill your phone'}/>
 
                 <ForgotPasswordForm onForgotPasswordSubmit={sendForgotPasswordRequest}/>
             </View>

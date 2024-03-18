@@ -20,10 +20,21 @@ export const inputText = StyleSheet.create({
     input: {
         backgroundColor: COLOR_WHITE,
         padding: 16,
+        width:'100%',
         borderColor: COLOR_LIGHT_GREY,
         borderBottomWidth: 1
     },
 
+    phone:{
+        backgroundColor: COLOR_WHITE,
+        borderColor: COLOR_LIGHT_GREY,
+        borderBottomWidth: 1,
+        width:'100%'
+    },
+    phone_inner:{
+        width:'100%',
+        backgroundColor: COLOR_WHITE,
+    },
     error_input: {
         borderColor: COLOR_RED,
     },

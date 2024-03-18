@@ -6,7 +6,7 @@ export interface AuthState {
 export interface User {
     id: number;
     username: string;
-    email: string;
+    phone: string;
     firstName: string;
     lastName: string;
     gender: string;
@@ -15,16 +15,16 @@ export interface User {
 }
 
 export interface UserForgotPasswordRequest {
-    email: string;
+    phone: string;
 }
 
 export interface UserSignInRequest {
-    email: string;
+    phone: string;
     password: string;
 }
 
 export interface UserSignUpRequest {
     name: string;
-    email: string;
+    phone: string;
     password: string;
 }

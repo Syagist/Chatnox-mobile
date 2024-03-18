@@ -20,7 +20,9 @@ const SignInForm = ({onSignInSubmit}: SignInFromProps) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
     const schema = yup.object().shape({
-        email: yup.string().email('Invalid email').required('Email is required'),
+        phone: yup.string()
+            .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
+            .required('Phone is required'),
         password: yup.string().required('Password is required'),
     });
 
@@ -41,15 +43,14 @@ const SignInForm = ({onSignInSubmit}: SignInFromProps) => {
             <View>
                 <Controller
                     control={control}
+                    name="phone"
                     render={({field: {onChange, onBlur, value}}) => (
-                        <InputText label={'Your email'}
-                                   type={'email'}
-                                   error={errors.email}
+                        <InputText label={'Your phone'}
+                                   type={'phone'}
+                                   error={errors.phone}
                                    onBlur={onBlur}
                                    onChange={onChange}/>
                     )}
-                    name="email"
-                    defaultValue=""
                 />
 
                 <Controller
@@ -66,7 +67,7 @@ const SignInForm = ({onSignInSubmit}: SignInFromProps) => {
                 />
             </View>
             <View>
-                <ButtonPrimary text='Sign up withn mail'
+                <ButtonPrimary text='Sign up withn phone'
                                onPress={handleSubmit(onSubmit)}/>
                 <ButtonTransparent text='Forgot password?'
                                    onPress={openForgotPasswordPage}/>

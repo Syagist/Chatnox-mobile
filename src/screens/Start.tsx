@@ -61,7 +61,7 @@ const Start = () => {
                         <View style={socialButton.variant_line}></View>
                     </View>
                     <View style={start.input_wrapper}>
-                        <ButtonPrimary text='Sign up withn mail'
+                        <ButtonPrimary text='Sign up withn phone'
                                        onPress={redirectToSignUp}
                                        color={COLOR_BLACK}
                                        backgroundColor={COLOR_WHITE}/>

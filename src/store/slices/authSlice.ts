@@ -21,7 +21,7 @@ export const loginUser = (userName: string, password: string) => async (dispatch
             .then(async (res) => {
                 const userData = res as User;
                 if (!userData.id) {
-                    throw new Error('Wrong Email Or Password');
+                    throw new Error('Wrong Phone Or Password');
                 }
                 await AsyncStorage.setItem('userData', JSON.stringify(userData));
                 dispatch(login(userData));

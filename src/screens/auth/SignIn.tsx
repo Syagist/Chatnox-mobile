@@ -31,7 +31,7 @@ const SignIn = () => {
                 <BackArrowNav/>
                 <GuestText
                     title={'Sign in to Chatbox'}
-                    text={'Welcome back! Sign in using your social account or email to continue us'}/>
+                    text={'Welcome back! Sign in using your social account or phone to continue us'}/>
                 <View style={signIn.wrapper}>
                     <View style={socialButton.buttons_box}>
                         <FacebookSignIn color={COLOR_BLACK}/>

@@ -35,7 +35,7 @@ const VerifyAccount = () => {
                 <BackArrowNav/>
                 <GuestText
                     title={'Verify Account'}
-                    text={'To Verify Account fill code we sent to your email'}/>
+                    text={'To Verify Account fill code we sent to your phone'}/>
                 <View style={verifyAccount.pin_wrapper}>
                     <PinInput onFinish={checkCode}/>
                 </View>
