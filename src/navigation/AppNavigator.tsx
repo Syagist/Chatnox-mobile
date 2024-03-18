@@ -4,23 +4,48 @@ import {createStackNavigator} from "@react-navigation/stack";
 import SignIn from "@/screens/auth/SignIn";
 import SignUp from "@/screens/auth/SignUp";
 import Start from "@/screens/Start";
+import ForgotPassword from "@/screens/auth/ForgotPassword";
+import VerifyAccount from "@/screens/auth/VerifyAccount";
 
 
 const Stack = createStackNavigator();
 
+const routes = [
+    {
+        name: 'Start',
+        component: Start
+    },
+    {
+        name: 'SignIn',
+        component: SignIn
+    },
+    {
+        name: 'SignUp',
+        component: SignUp
+    },
+    {
+        name: 'ForgotPassword',
+        component: ForgotPassword
+    },
+    {
+        name: 'VerifyAccount',
+        component: VerifyAccount
+    }
+]
 const AppNavigator = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Start">
-                <Stack.Screen name="Start" component={Start} options={{
-                    header: () => null,
-                }}/>
-                <Stack.Screen name="SignIn" component={SignIn} options={{
-                    header: () => null,
-                }}/>
-                <Stack.Screen name="SignUp" component={SignUp} options={{
-                    header: () => null,
-                }}/>
+                {routes.map((route) => (
+                    <Stack.Screen
+                        key={route.name}
+                        name={route.name}
+                        component={route.component}
+                        options={{
+                            header: () => null,
+                        }}
+                    />
+                ))}
             </Stack.Navigator>
         </NavigationContainer>
     );
