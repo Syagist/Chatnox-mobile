@@ -1,17 +1,13 @@
 import {StyleSheet} from "react-native";
-import {COLOR_PRIMARY, COLOR_WHITE} from "@/constants/Colors";
+import {COLOR_WHITE} from "@/constants/Colors";
 
 export const buttonPrimary = StyleSheet.create({
     button: {
-        backgroundColor: COLOR_PRIMARY,
         paddingLeft: 10,
         paddingRight: 10,
-        borderRadius: 14,
+        borderRadius: 16,
         textAlign: "center",
-        height: 51,
-        display: "flex",
-        alignItems: "center",
-        alignContent: "center",
+        height: 48,
         justifyContent: "center"
     },
 
@@ -19,7 +15,6 @@ export const buttonPrimary = StyleSheet.create({
         color: COLOR_WHITE,
         textAlign: "center",
         fontSize: 16,
-        fontWeight: "400",
-        textTransform: 'uppercase'
+        fontWeight: "500"
     },
 });

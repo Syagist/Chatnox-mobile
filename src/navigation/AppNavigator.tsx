@@ -9,7 +9,7 @@ import {createStackNavigator} from "@react-navigation/stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import {globalStyles} from "@/styles/globalStyles";
 import {COLOR_PRIMARY} from "@/constants/Colors";
-import SignUp from "@/screens/SignUp";
+import StartScreen from "@/screens/StartScreen";
 import {loadUserData} from "@/store/slices/authSlice";
 import {RootState, useAppDispatch, useAppSelector} from "@/store/store";
 
@@ -29,13 +29,13 @@ const AppNavigator = () => {
     const MainStack = () => {
         return (
             <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="SignUp" component={SignUp}/>
+                <Stack.Screen name="Home" component={Home}/>
+                <Stack.Screen name="SignUp" component={StartScreen}/>
             </Stack.Navigator>
         );
     };
     if (!user) {
-        return <SignUp/>;
+        return <StartScreen/>;
     }
 
     return (
@@ -61,7 +61,7 @@ const AppNavigator = () => {
                     }
                 })}>
                 <Tab.Screen name="MainStack" component={MainStack}/>
-                <Tab.Screen name="Profile"  component={Profile} />
+                <Tab.Screen name="Profile" component={Profile}/>
             </Tab.Navigator>
 
         </NavigationContainer>

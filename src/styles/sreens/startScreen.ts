@@ -1,7 +1,7 @@
 import {StyleSheet} from "react-native";
 import {COLOR_GREY, COLOR_PRIMARY, COLOR_WHITE} from "@/constants/Colors";
 
-export const sign_up = StyleSheet.create({
+export const start_screen = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: COLOR_PRIMARY,
@@ -13,19 +13,21 @@ export const sign_up = StyleSheet.create({
         left: "-25%",
         width: '150%',
         height: '150%',
-        objectFit:'cover'
+        objectFit: 'cover'
     },
     gradient_image: {
         width: "100%",
         height: "100%"
     },
     wrapper: {},
-    title_wrapper: {},
+    title_wrapper: {
+        marginBottom: 38
+    },
     title: {
         fontSize: 68,
         lineHeight: 78,
         color: COLOR_WHITE,
-        flexWrap:'wrap'
+        flexWrap: 'wrap'
     },
     title_bold: {
         fontWeight: '600'
@@ -50,4 +52,15 @@ export const sign_up = StyleSheet.create({
         width: 150,
         height: 20,
     },
+    login: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: COLOR_GREY,
+        paddingTop: 46,
+        paddingBottom: 46
+    },
+    loginText: {
+        color: COLOR_WHITE
+    }
 });
