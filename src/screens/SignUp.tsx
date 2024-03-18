@@ -1,48 +1,51 @@
 import React from 'react';
 import {Image, ScrollView, Text, TouchableOpacity, View} from "react-native";
 import {globalStyles} from "@/styles/globalStyles";
-import {start_screen} from "@/styles/sreens/startScreen";
+import {start} from "@/styles/sreens/start";
 import LogoIcon from "@/components/icons/LogoIcon";
-import FacebookLogin from "@/components/form/social/FacebookLoginButton";
-import GoogleLogin from "@/components/form/social/GoogleLoginButton";
-import IosLogin from "@/components/form/social/IosLoginButton";
+import FacebookLogin from "@/components/form/social/FacebookSignInButton";
+import GoogleLogin from "@/components/form/social/GoogleSignInButton";
+import IosLogin from "@/components/form/social/IosSignInButton";
 import {socialButton} from "@/styles/components/form/social/socialButton";
 import {COLOR_BLACK, COLOR_DARK_GREY, COLOR_WHITE} from "@/constants/Colors";
 import ButtonPrimary from "@/components/form/ButtonPrimary";
+import {RootStackParamList} from "@/interfaces/RootStackParamList";
+import {StackNavigationProp} from "@react-navigation/stack";
+import {useNavigation} from "@react-navigation/native";
 
-const StartScreen = () => {
+const SignUp = () => {
+    const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
     const redirectToSignUp = () => {
 
     };
 
     const redirectToLogin = () => {
-
     };
 
     return (
         <ScrollView contentContainerStyle={globalStyles.scrollViewContainer}>
             <View style={{
                 ...globalStyles.container,
-                ...start_screen.container
+                ...start.container
             }}>
-                <View style={start_screen.wrapper}>
-                    <View style={start_screen.gradient_wrapper}>
-                        <Image style={start_screen.gradient_image} source={require('../assets/images/gradient.png')}/>
+                <View style={start.wrapper}>
+                    <View style={start.gradient_wrapper}>
+                        <Image style={start.gradient_image} source={require('../assets/images/gradient.png')}/>
                     </View>
-                    <View style={start_screen.logo_wrapper}>
-                        <View style={start_screen.logo}>
+                    <View style={start.logo_wrapper}>
+                        <View style={start.logo}>
                             <LogoIcon/>
                         </View>
                     </View>
-                    <View style={start_screen.title_wrapper}>
-                        <Text style={start_screen.title}>
-                            Connect friends {'\n'}
-                            <Text style={start_screen.title_bold}>
+                    <View style={start.title_wrapper}>
+                        <Text style={start.title}>
+                            Sign Up {'\n'}
+                            <Text style={start.title_bold}>
                                 easily & quickly
                             </Text>
                         </Text>
-                        <Text style={start_screen.description}>
+                        <Text style={start.description}>
                             Our chat app is the perfect way to stay connected with friends and family.
                         </Text>
                     </View>
@@ -56,19 +59,19 @@ const StartScreen = () => {
                         <Text style={socialButton.variant_text}>OR</Text>
                         <View style={socialButton.variant_line}></View>
                     </View>
-                    <View style={start_screen.input_wrapper}>
+                    <View style={start.input_wrapper}>
                         <ButtonPrimary text='Sign up withn mail'
                                        onPress={redirectToSignUp}
                                        color={COLOR_BLACK}
                                        backgroundColor={COLOR_WHITE}/>
                     </View>
 
-                    <View style={start_screen.login}>
+                    <View style={start.login}>
                         <Text style={socialButton.variant_text}>Existing account?</Text>
                         <TouchableOpacity
                             activeOpacity={0.9}
                             onPress={redirectToLogin}>
-                            <Text style={start_screen.loginText}>Log in</Text>
+                            <Text style={start.loginText}>Log in</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -77,4 +80,4 @@ const StartScreen = () => {
     );
 };
 
-export default StartScreen;
+export default SignUp;

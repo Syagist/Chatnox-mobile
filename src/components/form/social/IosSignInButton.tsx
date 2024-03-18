@@ -5,7 +5,7 @@
     import {SocialButtonProps} from "@/interfaces/form/SocialButton";
     import {COLOR_BLACK, COLOR_DARK_GREY, COLOR_WHITE} from "@/constants/Colors";
 
-    const IosLogin = ({color}:SocialButtonProps) => {
+    const IosSignInButton = ({color}:SocialButtonProps) => {
         const handleIosLogin = async () => {
            
         };
@@ -17,4 +17,4 @@
         );
     };
 
-    export default IosLogin;
+    export default IosSignInButton;

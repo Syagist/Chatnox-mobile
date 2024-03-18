@@ -6,7 +6,7 @@ import {socialButton} from "@/styles/components/form/social/socialButton";
 import {SocialButtonProps} from "@/interfaces/form/SocialButton";
 
 
-const FacebookLogin = ({color}: SocialButtonProps) => {
+const FacebookSignInButton = ({color}: SocialButtonProps) => {
     const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
     const handleFacebookLogin = async () => {
@@ -43,4 +43,4 @@ const FacebookLogin = ({color}: SocialButtonProps) => {
     );
 };
 
-export default FacebookLogin;
+export default FacebookSignInButton;

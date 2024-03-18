@@ -1,10 +1,10 @@
 import {StyleSheet} from "react-native";
-import {COLOR_GREY, COLOR_PRIMARY, COLOR_WHITE} from "@/constants/Colors";
+import {COLOR_DARK_BG, COLOR_GREY, COLOR_WHITE} from "@/constants/Colors";
 
-export const start_screen = StyleSheet.create({
+export const start = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: COLOR_PRIMARY,
+        backgroundColor: COLOR_DARK_BG,
         position: 'relative'
     },
     gradient_wrapper: {

@@ -4,7 +4,7 @@ import {socialButton} from "@/styles/components/form/social/socialButton";
 import GoogleIcon from "@/components/icons/GoogleIcon";
 import {SocialButtonProps} from "@/interfaces/form/SocialButton";
 
-const GoogleLogin = ({color}:SocialButtonProps) => {
+const GoogleSignInButton = ({color}:SocialButtonProps) => {
     const handleGoogleLogin = async () => {
 
     };
@@ -16,4 +16,4 @@ const GoogleLogin = ({color}:SocialButtonProps) => {
     );
 };
 
-export default GoogleLogin;
+export default GoogleSignInButton;

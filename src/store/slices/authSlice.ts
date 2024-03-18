@@ -27,12 +27,12 @@ export const loginUser = (userName: string, password: string) => async (dispatch
                 dispatch(login(userData));
                 dispatch(loadUserData());
             }).catch(error => {
-            console.error('StartScreen error:', error);
+            console.error('Start error:', error);
             throw new Error( error);
 
         });
     } catch (error) {
-        console.error('StartScreen error:', error);
+        console.error('Start error:', error);
     }
 };
 const authSlice = createSlice({

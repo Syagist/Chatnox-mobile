@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 import {buttonPrimary} from "@/styles/components/form/buttonPrimary";
-import {BUTTON_COLOR_PRIMARY, COLOR_WHITE} from "@/constants/Colors";
+import {COLOR_PRIMARY, COLOR_WHITE} from "@/constants/Colors";
 
 interface ButtonPrimaryProps {
     text: string;
@@ -12,7 +12,7 @@ interface ButtonPrimaryProps {
 
 const ButtonPrimary = ({
                            text,
-                           backgroundColor = BUTTON_COLOR_PRIMARY,
+                           backgroundColor = COLOR_PRIMARY,
                            color = COLOR_WHITE,
                            onPress
                        }: ButtonPrimaryProps) => {

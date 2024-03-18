@@ -3,9 +3,11 @@ import Svg, {Path} from 'react-native-svg';
 
 const ArrowIcon = ({color = "#CACACA"}) => {
     return (
-        <Svg viewBox="0 0 24 24" fill="none">
-            <Path d="M16 22L6 12L16 2L17.775 3.775L9.55 12L17.775 20.225L16 22Z" fill={color}/>
+        <Svg  viewBox="0 0 14 10" fill="none">
+            <Path d="M5 1L1 5M1 5L5 9M1 5L13 5" stroke={color} stroke-width="1.5" stroke-linecap="round"
+                  strokeLinejoin="round"/>
         </Svg>
+
     );
 };
 
