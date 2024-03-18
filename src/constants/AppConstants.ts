@@ -3,6 +3,7 @@ import SignIn from "@/screens/auth/SignIn";
 import SignUp from "@/screens/auth/SignUp";
 import ForgotPassword from "@/screens/auth/ForgotPassword";
 import VerifyAccount from "@/screens/auth/VerifyAccount";
+import Profile from "@/screens/Profile";
 
 export const BASE_API_URL =  'http://localhost:5000/';
 export const AUTH_API =  `${BASE_API_URL}auth/login`;
@@ -29,6 +30,10 @@ const routes = [
     {
         name: 'VerifyAccount',
         component: VerifyAccount
+    },
+    {
+        name: 'Profile',
+        component: Profile
     }
 ]
 

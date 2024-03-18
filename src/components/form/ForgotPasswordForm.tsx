@@ -7,6 +7,7 @@ import * as yup from "yup";
 import ButtonPrimary from "@/components/form/ui/ButtonPrimary";
 import {forgotPassword} from "@/styles/sreens/auth/forgotPassword";
 import {UserForgotPasswordRequest} from "@/interfaces/user/AuthState";
+import InputPhone from "@/components/form/ui/InputPhone";
 
 interface ForgotPasswordFromProps {
     onForgotPasswordSubmit: (userForgotPasswordRequest: UserForgotPasswordRequest) => void
@@ -15,9 +16,7 @@ interface ForgotPasswordFromProps {
 const ForgotPasswordForm = ({onForgotPasswordSubmit}: ForgotPasswordFromProps) => {
 
     const schema = yup.object().shape({
-        phone: yup.string()
-            .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
-            .required('Phone is required'),
+        phone: yup.string().required('Phone is required'),
     });
 
     const {control, handleSubmit, formState: {errors}} = useForm({
@@ -35,12 +34,8 @@ const ForgotPasswordForm = ({onForgotPasswordSubmit}: ForgotPasswordFromProps) =
                 <Controller
                     control={control}
                     name="phone"
-                    render={({field: {onChange, onBlur}}) => (
-                        <InputText label={'Your phone'}
-                                   type={'phone'}
-                                   error={errors.phone}
-                                   onBlur={onBlur}
-                                   onChange={onChange}/>
+                    render={({field: {onChange}}) => (
+                        <InputPhone label={"Your Phone"} error={errors.phone} onChange={onChange}/>
                     )}
                 />
             </View>

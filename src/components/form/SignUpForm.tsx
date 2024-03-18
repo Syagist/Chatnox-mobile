@@ -44,22 +44,13 @@ const SignUpForm = ({onSignUpSubmit}: SignUpFromProps) => {
                                    onChange={onChange}/>
                     )}
                 />
-                <View style={inputText.wrapper}>
-                    <Text
-                        style={[
-                            inputText.label,
-                            errors.phone && inputText.error_label
-                        ]}>
-                        Phone
-                    </Text>
-                    <Controller
-                        control={control}
-                        name="phone"
-                        render={({field: {onChange}}) => (
-                            <InputPhone label={"Your Phone"} error={errors.phone} onChange={onChange}/>
-                        )}
-                    />
-                </View>
+                <Controller
+                    control={control}
+                    name="phone"
+                    render={({field: {onChange}}) => (
+                        <InputPhone label={"Your Phone"} error={errors.phone} onChange={onChange}/>
+                    )}
+                />
 
                 <Controller
                     control={control}

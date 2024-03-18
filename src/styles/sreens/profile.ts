@@ -1,5 +1,4 @@
 import {StyleSheet} from "react-native";
-import {COLOR_GRAY, COLOR_LIGHT_BLACK} from "@/constants/Colors";
 
 export const profile = StyleSheet.create({
     profile_wrapper: {

@@ -11,6 +11,7 @@ import {signIn} from "@/styles/sreens/auth/signIn";
 import {useNavigation} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {RootStackParamList} from "@/interfaces/RootStackParamList";
+import InputPhone from "@/components/form/ui/InputPhone";
 
 interface SignInFromProps {
     onSignInSubmit: (userSignInRequest: UserSignInRequest) => void
@@ -20,9 +21,7 @@ const SignInForm = ({onSignInSubmit}: SignInFromProps) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
     const schema = yup.object().shape({
-        phone: yup.string()
-            .matches(/^[0-9]{10}$/, 'Phone number must be exactly 10 digits')
-            .required('Phone is required'),
+        phone: yup.string().required('Phone is required'),
         password: yup.string().required('Password is required'),
     });
 
@@ -44,12 +43,8 @@ const SignInForm = ({onSignInSubmit}: SignInFromProps) => {
                 <Controller
                     control={control}
                     name="phone"
-                    render={({field: {onChange, onBlur, value}}) => (
-                        <InputText label={'Your phone'}
-                                   type={'phone'}
-                                   error={errors.phone}
-                                   onBlur={onBlur}
-                                   onChange={onChange}/>
+                    render={({field: {onChange}}) => (
+                        <InputPhone label={"Your Phone"} error={errors.phone} onChange={onChange}/>
                     )}
                 />
 

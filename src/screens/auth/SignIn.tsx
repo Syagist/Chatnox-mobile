@@ -20,6 +20,8 @@ const SignIn = () => {
 
     const sendSignInRequest = (userSignInRequest: UserSignInRequest) => {
         console.log(userSignInRequest)
+        const token = "token"
+        navigation.navigate('Profile', {token: token})
     };
 
     return (

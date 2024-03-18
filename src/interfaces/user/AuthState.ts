@@ -5,13 +5,12 @@ export interface AuthState {
 
 export interface User {
     id: number;
-    username: string;
+    name: string;
     phone: string;
-    firstName: string;
-    lastName: string;
     gender: string;
     image: string;
-    token: string;
+    token?: string;
+    contacts?: Array<User>
 }
 
 export interface UserForgotPasswordRequest {

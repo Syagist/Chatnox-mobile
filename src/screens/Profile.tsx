@@ -1,41 +1,50 @@
 import React from 'react';
-import { Text, TouchableOpacity, View} from "react-native";
-import {logoutUser} from "@/store/slices/authSlice";
-import {RootState, useAppDispatch, useAppSelector} from "@/store/store";
+import {View} from "react-native";
 import {globalStyles} from "@/styles/globalStyles";
 import {profile} from "@/styles/sreens/profile";
-import LogoutIcon from "@/components/icons/LogoutIcon";
-import ArrowIcon from "@/components/icons/ArrowIcon";
+import {User} from "@/interfaces/user/AuthState";
+
+const user: User = {
+    id: 1,
+    name: 'Samvel',
+    phone: '+37498942042',
+    gender: 'male',
+    image:'https://picsum.photos/200/300',
+    token: '',
+    contacts: [
+         {
+            id: 2,
+            name: 'Adil Adnan',
+            phone: '+37498272721',
+            gender: 'male',
+            image:'https://picsum.photos/200/300',
+        },
+        {
+            id: 3,
+            name: 'Bristy Haque',
+            phone: '+37498272929',
+            gender: 'male',
+            image:'https://picsum.photos/333/300',
+        }
+    ]
+}
+
 
 const Profile = () => {
-    const dispatch = useAppDispatch();
-    const user = useAppSelector((state: RootState) => state.auth.userData);
-
-    const handleLogout = () => {
-        dispatch(logoutUser());
-    }
 
     return (
-            <View style={globalStyles.container}>
-                <View style={profile.profile_wrapper}>
-                    <View style={profile.profile_info_wrapper}>
-                        {/*<Image src={user.image} style={profile.profile_image}/>*/}
-                        {/*<View style={profile.profile_info}>*/}
-                        {/*    <Text style={profile.profile_name}>{user.firstName} {user.lastName}</Text>*/}
-                        {/*    <Text style={profile.profile_gender}>{user.gender}</Text>*/}
-                        {/*</View>*/}
-                    </View>
-                    <TouchableOpacity style={profile.logout_btn} onPress={handleLogout}>
-                        <View style={profile.btn_icon}>
-                            <LogoutIcon/>
-                        </View>
-                        <Text style={profile.btn_text}>Log Out</Text>
-                        <View style={profile.btn_arrow}>
-                            <ArrowIcon/>
-                        </View>
-                    </TouchableOpacity>
+        <View style={globalStyles.container}>
+            <View style={profile.profile_wrapper}>
+                <View style={profile.profile_info_wrapper}>
+                    {/*<Image source={user.image} style={profile.profile_image}/>*/}
+                    {/*<View style={profile.profile_info}>*/}
+                    {/*    <Text style={profile.profile_name}>{user.firstName} {user.lastName}</Text>*/}
+                    {/*    <Text style={profile.profile_gender}>{user.gender}</Text>*/}
+                    {/*</View>*/}
                 </View>
+
             </View>
+        </View>
 
     );
 };
