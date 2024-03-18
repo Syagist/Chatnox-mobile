@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
-import {buttonTransparent} from "@/styles/components/form/buttonTransparent";
+import {buttonTransparent} from "@/styles/components/form/ui/buttonTransparent";
 import {COLOR_PRIMARY} from "@/constants/Colors";
 
 interface ButtonTransparentProps {

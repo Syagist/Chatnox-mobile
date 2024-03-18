@@ -20,6 +20,7 @@ const SignUp = () => {
 
     const sendSignUpRequest = (userSignUpRequest: UserSignUpRequest) => {
         console.log(userSignUpRequest)
+        navigation.navigate('VerifyAccount');
     };
 
     return (

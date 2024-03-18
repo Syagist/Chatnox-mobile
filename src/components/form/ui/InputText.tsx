@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Text, TextInput, TouchableOpacity, View} from 'react-native';
-import {inputText} from "@/styles/components/form/inputText";
+import {inputText} from "@/styles/components/form/ui/inputText";
 import {COLOR_BLACK} from "@/constants/Colors";
 import ShowIcon from "@/components/icons/ShowIcon";
 import HideIcon from "@/components/icons/HideIcon";

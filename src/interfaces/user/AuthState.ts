@@ -13,6 +13,11 @@ export interface User {
     image: string;
     token: string;
 }
+
+export interface UserForgotPasswordRequest {
+    email: string;
+}
+
 export interface UserSignInRequest {
     email: string;
     password: string;

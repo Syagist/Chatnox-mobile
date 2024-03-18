@@ -30,10 +30,12 @@ export const inputText = StyleSheet.create({
 
     pass_button: {
         position: 'absolute',
+        backgroundColor: COLOR_WHITE,
         right: 0,
-        bottom: 20,
-        width: 20,
-        height: 20
+        bottom: 8,
+        padding:8,
+        width: 36,
+        height: 36,
     },
     error_text: {
         position: 'absolute',

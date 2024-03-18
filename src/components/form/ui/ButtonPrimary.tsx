@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
-import {buttonPrimary} from "@/styles/components/form/buttonPrimary";
+import {buttonPrimary} from "@/styles/components/form/ui/buttonPrimary";
 import {COLOR_PRIMARY, COLOR_WHITE} from "@/constants/Colors";
 
 interface ButtonPrimaryProps {

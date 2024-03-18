@@ -2,11 +2,11 @@ import React from 'react';
 import {Controller, useForm} from "react-hook-form";
 import {yupResolver} from "@hookform/resolvers/yup";
 import {View} from "react-native";
-import InputText from "@/components/form/InputText";
+import InputText from "@/components/form/ui/InputText";
 import * as yup from "yup";
 import {UserSignUpRequest} from "@/interfaces/user/AuthState";
-import ButtonPrimary from "@/components/form/ButtonPrimary";
-import ButtonTransparent from "@/components/form/ButtonTransparent";
+import ButtonPrimary from "@/components/form/ui/ButtonPrimary";
+import ButtonTransparent from "@/components/form/ui/ButtonTransparent";
 import {signUp} from "@/styles/sreens/auth/signUp";
 
 interface SignUpFromProps {
@@ -83,8 +83,6 @@ const SignUpForm = ({onSignUpSubmit}: SignUpFromProps) => {
             <View>
                 <ButtonPrimary text='Sign up withn mail'
                                onPress={handleSubmit(onSubmit)}/>
-                <ButtonTransparent text='Forgot password?'
-                                   onPress={handleSubmit(onSubmit)}/>
             </View>
 
         </View>

@@ -5,7 +5,7 @@ import {start} from "@/styles/sreens/start";
 import LogoIcon from "@/components/icons/LogoIcon";
 import {socialButton} from "@/styles/components/form/social/socialButton";
 import {COLOR_BLACK, COLOR_DARK_GREY, COLOR_WHITE} from "@/constants/Colors";
-import ButtonPrimary from "@/components/form/ButtonPrimary";
+import ButtonPrimary from "@/components/form/ui/ButtonPrimary";
 import FacebookSignInButton from "@/components/form/social/FacebookSignInButton";
 import GoogleSignInButton from "@/components/form/social/GoogleSignInButton";
 import IosSignInButton from "@/components/form/social/IosSignInButton";
