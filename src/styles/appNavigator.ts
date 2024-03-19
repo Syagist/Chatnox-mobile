@@ -42,7 +42,7 @@ export const bottomNavigator = StyleSheet.create({
     },
     navigator_text: {
         width: '100%',
-        fontSize: 16,
+        fontSize: 14,
         paddingTop: 5,
         textAlign:'center',
     }

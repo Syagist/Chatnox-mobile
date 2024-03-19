@@ -1,5 +1,5 @@
-export const COLOR_DARK_BG =  '#1E1E1E';
-export const COLOR_PRIMARY =  '#24786D';
+export const COLOR_DARK_BG =  '#002d1a';
+export const COLOR_PRIMARY =  '#24af9d';
 export const TURQUOISE  =  '#58C3B6';
 export const COLOR_WHITE =  '#ffffff';
 export const COLOR_TRANSPARENT =  'transparent';

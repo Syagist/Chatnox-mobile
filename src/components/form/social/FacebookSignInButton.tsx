@@ -15,11 +15,10 @@ const FacebookSignInButton = ({color}: SocialButtonProps) => {
                 appId: '1458808944719881',
             });
 
-            const gago = await Facebook.logInWithReadPermissionsAsync({
+            const logInWithReadPermissionsAsync = await Facebook.logInWithReadPermissionsAsync({
                 permissions: ['public_profile', 'phone'],
             });
 
-            console.log(gago)
             //
             // if (type === 'success') {
             //     const response = await fetch(`https://graph.facebook.com/me?access_token=${token}`);
