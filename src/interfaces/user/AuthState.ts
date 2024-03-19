@@ -1,3 +1,5 @@
+import {Message} from "@/interfaces/message/Message";
+
 export interface AuthState {
     isAuthenticated: boolean;
     userData: User | null
@@ -11,6 +13,7 @@ export interface User {
     image: string;
     token?: string;
     contacts?: Array<User>
+    messages?: Array<Message>
 }
 
 export interface UserForgotPasswordRequest {

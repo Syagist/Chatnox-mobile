@@ -1,29 +1,18 @@
 import {StyleSheet} from "react-native";
+import {COLOR_DARK_BG, COLOR_WHITE} from "@/constants/Colors";
 
 export const profile = StyleSheet.create({
-    profile_wrapper: {
-
+    container: {
+        flex: 1,
+        backgroundColor: COLOR_DARK_BG,
+        position: 'relative'
     },
-    profile_info_wrapper: {
-
+    wrapper:{
+        backgroundColor:COLOR_WHITE,
     },
-    profile_image: {
-
-    },
-    profile_info: {},
-    profile_name: {
-
-    },
-    profile_gender: {
-
-    },
-    logout_btn: {
-
-    },
-    btn_icon: {
-    },
-    btn_text: {
-    },
-    btn_arrow: {
+    img:{
+        backgroundColor:COLOR_WHITE,
+        width:100,
+        height:100
     }
 });

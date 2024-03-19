@@ -7,6 +7,7 @@ export const COLOR_GREY =  '#B9C1BE';
 export const COLOR_DARK_GREY =  '#A8B0AF';
 export const COLOR_LIGHT_GREY =  '#CDD1D0';
 export const COLOR_DARKER_GREY =  '#797C7B';
+export const COLOR_LIGHT_BLACK =  '#363F3B';
 
 export const COLOR_BLACK =  '#000000';
 export const COLOR_RED =  '#FF2D1B';
