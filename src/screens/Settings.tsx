@@ -1,21 +1,21 @@
 import React from 'react';
-import {ScrollView, View} from "react-native";
+import {Image, ScrollView, View, Text} from "react-native";
 import {globalStyles} from "@/styles/globalStyles";
-import {profile} from "@/styles/sreens/profile";
+import {settiings} from "@/styles/sreens/settiings";
 
-const Profile = () => {
+const Settings = () => {
+
 
     return (
         <ScrollView contentContainerStyle={globalStyles.scrollViewContainer}>
             <View style={{
                 ...globalStyles.container,
-                ...profile.container
+                ...settiings.container
             }}>
-
-
+             <Text>Contacts</Text>
             </View>
         </ScrollView>
     );
 };
 
-export default Profile;
+export default Settings;

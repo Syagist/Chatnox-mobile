@@ -10,7 +10,7 @@ export const buttonRounded = StyleSheet.create({
     icon_box: {
         width: '100%',
         height: '100%',
-        padding: 10,
+        padding: 12,
         borderRadius: 50,
         borderColor: COLOR_LIGHT_BLACK,
         borderWidth: 1,
