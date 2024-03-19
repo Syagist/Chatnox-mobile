@@ -26,6 +26,7 @@
     "react-native-confirmation-code-field": "^7.3.2",
     "react-native-phone-number-input": "^2.1.0",
     "react-native-svg": "^15.1.0",
+    "react-native-swipe-list-view": "^3.2.9",
     "react-redux": "^9.1.0",
     "yup": "^1.4.0"
   },

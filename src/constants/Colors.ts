@@ -11,4 +11,5 @@ export const COLOR_LIGHT_BLACK =  '#363F3B';
 
 export const COLOR_BLACK =  '#000000';
 export const COLOR_RED =  '#FF2D1B';
+export const COLOR_GREEN =  '#0FE16D';
 

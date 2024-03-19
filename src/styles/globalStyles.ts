@@ -23,5 +23,15 @@ export const globalStyles = StyleSheet.create({
     scrollViewContainer: {
         minHeight: '100%'
     },
+    card_background: {
+        flex:1,
+        backgroundColor: COLOR_WHITE,
+        paddingVertical: 40,
+        paddingHorizontal: 24,
+        borderTopLeftRadius:50,
+        borderTopRightRadius:50,
+        marginLeft: APP_LEFT_PADDING * -1,
+        marginRight: APP_RIGHT_PADDING * -1
+    }
 
 });
