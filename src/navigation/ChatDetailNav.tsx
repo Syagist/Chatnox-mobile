@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {TouchableOpacity, View} from "react-native";
-import {useNavigation} from "@react-navigation/native";
+import {useNavigation, useRoute} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {RootStackParamList} from "@/interfaces/RootStackParamList";
 import {appNavigator} from "@/styles/appNavigator";
@@ -15,9 +15,8 @@ interface ChatDetailNav {
     onVideoCall: () => void
 }
 
-const ChatDetailNav = ({chat, onCall,onVideoCall}: ChatDetailNav) => {
+const ChatDetailNav = ({chat, onCall, onVideoCall}: ChatDetailNav) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
-    console.log(chat)
 
     return (
         <View style={appNavigator.chat_detail_nav}>
