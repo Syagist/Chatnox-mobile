@@ -6,6 +6,7 @@ export const messageUserImage = StyleSheet.create({
         width: 56,
         height: 56,
         padding: 4,
+        marginRight:8
     },
     wrapper: {
         borderRadius: 100,

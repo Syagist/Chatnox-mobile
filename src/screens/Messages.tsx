@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, ScrollView, TouchableOpacity, View,Text} from "react-native";
+import {FlatList, ScrollView, TouchableOpacity, View} from "react-native";
 import {globalStyles} from "@/styles/globalStyles";
 import {messages} from "@/styles/sreens/messages";
 import SearchWithButtonNav from "@/navigation/SearchWithButtonNav";
@@ -10,41 +10,76 @@ import {RootStackParamList} from "@/interfaces/RootStackParamList";
 import {messageData, user} from "@/constants/AppConstants";
 import MessagePreviewItem from "@/components/message/MessagePreviewItem";
 import {SwipeListView} from "react-native-swipe-list-view";
-interface SwipableProps {
-    item:any,
+import {COLOR_LIGHT_BLACK, COLOR_RED_ALERT, COLOR_WHITE} from "@/constants/Colors";
+import DeleteIcon from "@/components/icons/DeleteIcon";
+import NotificationIcon from "@/components/icons/NotificationIcon";
+import {MessageItem} from "@/interfaces/message/Message";
+
+interface SwipeableProps {
+    item: any,
     handleSwipeLeft: () => void
 }
+
 const Messages = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
     const navigateToSettingsPage = () => {
         navigation.navigate('MessageDetail');
     };
-    const SwipeableListItem = ({ item, handleSwipeLeft }:SwipableProps) => {
+
+    const handleNotificationSettings = (item: MessageItem) => {
+        console.log(item)
+    };
+
+    const handleSwipeLeft = (item: MessageItem) => {
+        console.log('123')
+    }
+
+    const handleDeleteMessage = (item: MessageItem) => {
+        console.log(item)
+    };
+
+    const SwipeableListItem = ({item, handleSwipeLeft}: SwipeableProps) => {
         return (
             <SwipeListView
                 disableRightSwipe
                 renderHiddenItem={() => (
-                    <TouchableOpacity onPress={handleSwipeLeft} style={{position:'absolute',right:0}}>
-                        <View style={{ backgroundColor: 'green', justifyContent: 'center', alignItems: 'center', width: 75 }}>
-                            <Text>Button 1</Text>
+                    <TouchableOpacity onPress={handleSwipeLeft} style={messages.buttons_wrapper}>
+                        <View style={messages.buttons_container}>
+
+                            <RoundedButton
+                                icon={<NotificationIcon color={COLOR_WHITE}/>}
+                                width={36}
+                                height={36}
+                                backgroundColor={COLOR_LIGHT_BLACK}
+                                borderColor={COLOR_LIGHT_BLACK}
+                                onPress={() => {
+                                    handleNotificationSettings(item)
+                                }}/>
+                            <RoundedButton
+                                icon={<DeleteIcon color={COLOR_WHITE}/>}
+                                width={36}
+                                height={36}
+                                backgroundColor={COLOR_RED_ALERT}
+                                borderColor={COLOR_RED_ALERT}
+                                onPress={() => {
+                                    handleDeleteMessage(item)
+                                }}/>
+
                         </View>
                     </TouchableOpacity>
                 )}
-                rightOpenValue={-75}
+                rightOpenValue={-104}
                 previewRowKey={item.key}
-                previewOpenValue={-40}
-                previewOpenDelay={3000}
                 data={[item]}
-                renderItem={({ item }) => (
+                renderItem={({item}) => (
                     <MessagePreviewItem messageItem={item} key={item.id}/>
                 )}
             />
         );
     };
-    const handleSwipeLeft = () =>{
-        console.log('123')
-    }
+
+
     return (
         <ScrollView contentContainerStyle={globalStyles.scrollViewContainer}>
             <View style={{
@@ -63,13 +98,14 @@ const Messages = () => {
                     <FlatList
                         data={messageData.messageList}
                         keyExtractor={(item) => String(item.id)}
-                        renderItem={({ item }) => <SwipeableListItem item={item} onSwipeLeft={() => handleSwipeLeft(item)} />}
-                    />
-                    {/*//handle also empty messageList case*/}
-
-                    {messageData.messageList?.map((messageItem) => {
-                        return <MessagePreviewItem messageItem={messageItem} key={messageItem.id}/>
-                    })}
+                        renderItem={({item}) => {
+                            return (
+                                <SwipeableListItem
+                                    item={item}
+                                    handleSwipeLeft={() => handleSwipeLeft(item)}/>
+                            )
+                        }
+                        }/>
                 </View>
             </View>
         </ScrollView>

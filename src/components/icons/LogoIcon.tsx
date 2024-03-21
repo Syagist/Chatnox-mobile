@@ -1,5 +1,5 @@
 import React from 'react';
-import Svg, {Defs, G, LinearGradient, Path, Ellipse} from 'react-native-svg';
+import Svg, {Path} from 'react-native-svg';
 
 const LogoIcon = () => {
     return (

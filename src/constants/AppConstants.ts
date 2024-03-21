@@ -58,7 +58,7 @@ export const messageData: MessageList = {
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
-            unReadMessagesCount: 0,
+            unReadMessagesCount: 90,
             participants: [{
                 id: 4,
                 name: 'Bristy Haque2',
@@ -78,7 +78,223 @@ export const messageData: MessageList = {
                 gender: 'male',
                 image: 'https://picsum.photos/500/350',
             }],
-            messages: [{text: 'lorem1', time: 'today'}, {text: '123123', time: 'yesterday'}]
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
+        },
+        {
+            id: 2,
+            isGroup: true,
+            isOnline: false,
+            groupName:'Team Align',
+            unReadMessagesCount: 90,
+            participants: [{
+                id: 4,
+                name: 'Bristy Haque2',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/900/300',
+            }, {
+                id: 5,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/600/300',
+            }, {
+                id: 7,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/500/350',
+            }],
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
+        },
+        {
+            id: 2,
+            isGroup: true,
+            isOnline: false,
+            groupName:'Team Align',
+            unReadMessagesCount: 90,
+            participants: [{
+                id: 4,
+                name: 'Bristy Haque2',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/900/300',
+            }, {
+                id: 5,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/600/300',
+            }, {
+                id: 7,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/500/350',
+            }],
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
+        },
+        {
+            id: 2,
+            isGroup: true,
+            isOnline: false,
+            groupName:'Team Align',
+            unReadMessagesCount: 90,
+            participants: [{
+                id: 4,
+                name: 'Bristy Haque2',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/900/300',
+            }, {
+                id: 5,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/600/300',
+            }, {
+                id: 7,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/500/350',
+            }],
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
+        },
+        {
+            id: 2,
+            isGroup: true,
+            isOnline: false,
+            groupName:'Team Align',
+            unReadMessagesCount: 90,
+            participants: [{
+                id: 4,
+                name: 'Bristy Haque2',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/900/300',
+            }, {
+                id: 5,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/600/300',
+            }, {
+                id: 7,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/500/350',
+            }],
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
+        },
+        {
+            id: 2,
+            isGroup: true,
+            isOnline: false,
+            groupName:'Team Align',
+            unReadMessagesCount: 90,
+            participants: [{
+                id: 4,
+                name: 'Bristy Haque2',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/900/300',
+            }, {
+                id: 5,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/600/300',
+            }, {
+                id: 7,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/500/350',
+            }],
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
+        },
+        {
+            id: 2,
+            isGroup: true,
+            isOnline: false,
+            groupName:'Team Align',
+            unReadMessagesCount: 90,
+            participants: [{
+                id: 4,
+                name: 'Bristy Haque2',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/900/300',
+            }, {
+                id: 5,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/600/300',
+            }, {
+                id: 7,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/500/350',
+            }],
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
+        },
+        {
+            id: 2,
+            isGroup: true,
+            isOnline: false,
+            groupName:'Team Align',
+            unReadMessagesCount: 90,
+            participants: [{
+                id: 4,
+                name: 'Bristy Haque2',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/900/300',
+            }, {
+                id: 5,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/600/300',
+            }, {
+                id: 7,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/500/350',
+            }],
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
+        },
+        {
+            id: 2,
+            isGroup: true,
+            isOnline: false,
+            groupName:'Team Align',
+            unReadMessagesCount: 90,
+            participants: [{
+                id: 4,
+                name: 'Bristy Haque2',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/900/300',
+            }, {
+                id: 5,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/600/300',
+            }, {
+                id: 7,
+                name: 'Bristy Haque3',
+                phone: '+37498272929',
+                gender: 'male',
+                image: 'https://picsum.photos/500/350',
+            }],
+            messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         }
     ]
 }
