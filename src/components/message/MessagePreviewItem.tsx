@@ -20,7 +20,7 @@ const MessagePreviewItem = ({messageItem}: MessageItemProps) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
     const openMessageDetail = () => {
-        navigation.navigate('MessageDetail')
+            navigation.navigate('MessageDetail',{messageItem:messageItem})
     };
 
     return (

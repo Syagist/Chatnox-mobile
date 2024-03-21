@@ -1,4 +1,4 @@
-import MessageDetail from "@/screens/MessageDetail";
+import {MessageItem} from "@/interfaces/message/Message";
 
 export type RootStackParamList = {
     Start: undefined;
@@ -9,7 +9,7 @@ export type RootStackParamList = {
     Profile: { token: string };
     Messages: undefined;
     Calls: undefined;
-    Contacts:undefined;
+    Contacts: undefined;
     Settings: undefined;
-    MessageDetail: undefined;
+    MessageDetail: { messageItem: MessageItem };
 };

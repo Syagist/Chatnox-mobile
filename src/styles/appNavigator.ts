@@ -1,6 +1,6 @@
 import {StyleSheet} from "react-native";
 import {APP_LEFT_PADDING} from "@/constants/Sizes";
-import {COLOR_RED, COLOR_WHITE, TURQUOISE} from "@/constants/Colors";
+import {COLOR_WHITE} from "@/constants/Colors";
 
 export const appNavigator = StyleSheet.create({
     back_arrow_nav_btn: {
@@ -26,15 +26,16 @@ export const appNavigator = StyleSheet.create({
         fontWeight: '500',
         padding: 10,
         color: COLOR_WHITE
-    }
+    },
+    message_detail_nav: {}
 });
 
 export const bottomNavigator = StyleSheet.create({
     navigator_wrapper: {},
 
     navigator_item: {
-        height:90,
-        paddingTop:10,
+        height: 90,
+        paddingTop: 10,
     },
     navigator_icon: {
         width: 22,
@@ -44,6 +45,6 @@ export const bottomNavigator = StyleSheet.create({
         width: '100%',
         fontSize: 14,
         paddingTop: 5,
-        textAlign:'center',
-    }
+        textAlign: 'center',
+    },
 })
