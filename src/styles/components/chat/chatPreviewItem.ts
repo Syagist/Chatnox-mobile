@@ -1,7 +1,7 @@
 import {StyleSheet} from "react-native";
 import {COLOR_DARKER_GREY, COLOR_LIGHT_BLACK, COLOR_RED, COLOR_RED_ALERT, COLOR_WHITE} from "@/constants/Colors";
 
-export const messagePreviewItem = StyleSheet.create({
+export const chatPreviewItem = StyleSheet.create({
     wrapper: {
         width: '100%',
         backgroundColor: COLOR_WHITE,
@@ -14,17 +14,17 @@ export const messagePreviewItem = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
     },
-    message_content_box: {
+    chat_content_box: {
         flex: 1,
         flexDirection:'column',
         justifyContent:'center',
     },
-    message_top_box: {
+    chat_top_box: {
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
     },
-    message_bottom_box: {
+    chat_bottom_box: {
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',

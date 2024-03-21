@@ -1,4 +1,4 @@
-import {MessageItem} from "@/interfaces/message/Message";
+import {Chat} from "@/interfaces/chat/Chat";
 
 export type RootStackParamList = {
     Start: undefined;
@@ -7,9 +7,9 @@ export type RootStackParamList = {
     ForgotPassword: undefined;
     VerifyAccount: undefined;
     Profile: { token: string };
-    Messages: undefined;
+    Chats: undefined;
     Calls: undefined;
     Contacts: undefined;
     Settings: undefined;
-    MessageDetail: { messageItem: MessageItem };
+    ChatDetail: { chat: Chat };
 };

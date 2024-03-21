@@ -1,19 +1,18 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {ScrollView, View} from "react-native";
 import {globalStyles} from "@/styles/globalStyles";
-import {messages} from "@/styles/sreens/messages";
 import {Route, useNavigation, useRoute} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
 import {RootStackParamList} from "@/interfaces/RootStackParamList";
-import MessageDetailNav from "@/navigation/MessageDetailNav";
-import {MessageItem} from "@/interfaces/message/Message";
-import {messageDetail} from "@/styles/sreens/messageDetail";
+import {chatDetail} from "@/styles/sreens/chatDetail";
+import ChatDetailNav from "@/navigation/ChatDetailNav";
+import {Chat} from "@/interfaces/chat/Chat";
 
 
-const MessageDetail = () => {
+const ChatDetail = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
-    const route = useRoute<Route<"MessageDetail", { messageItem: MessageItem }>>();
-    const messageItem = route.params?.messageItem;
+    const route = useRoute<Route<"ChatDetail", { chat: Chat }>>();
+    const chat = route.params?.chat;
 
     const navigateToSettingsPage = () => {
     };
@@ -23,9 +22,9 @@ const MessageDetail = () => {
         <ScrollView contentContainerStyle={globalStyles.scrollViewContainer}>
             <View style={{
                 ...globalStyles.container,
-                ...messageDetail.container
+                ...chatDetail.container
             }}>
-                <MessageDetailNav messageItem={messageItem}
+                <ChatDetailNav chat={chat}
                                   onCall={() => {
                                   }}
                                   onVideoCall={() => {
@@ -35,4 +34,4 @@ const MessageDetail = () => {
     );
 };
 
-export default MessageDetail;
+export default ChatDetail;

@@ -29,7 +29,7 @@ const FacebookSignInButton = ({color}: SocialButtonProps) => {
             // }
         } catch (error) {
             console.log(error)
-            // setErrorMsg(error?.message??'');
+            // setErrorMsg(error?.chat??'');
         }
     };
 

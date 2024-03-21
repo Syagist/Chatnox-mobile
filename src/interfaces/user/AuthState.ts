@@ -1,4 +1,4 @@
-import {Message} from "@/interfaces/message/Message";
+import {Chat} from "@/interfaces/chat/Chat";
 
 export interface AuthState {
     isAuthenticated: boolean;
@@ -13,7 +13,7 @@ export interface User {
     image: string;
     token?: string;
     contacts?: Array<User>
-    messages?: Array<Message>
+    messages?: Array<Chat>
 }
 
 export interface UserForgotPasswordRequest {

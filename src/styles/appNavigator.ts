@@ -27,12 +27,12 @@ export const appNavigator = StyleSheet.create({
         padding: 10,
         color: COLOR_WHITE
     },
-    message_detail_nav: {
+    chat_detail_nav: {
         backgroundColor:COLOR_WHITE,
         marginLeft:APP_LEFT_PADDING * -1,
         marginRight:APP_RIGHT_PADDING * -1
     },
-    message_detail_nav_back_button: {}
+    chat_detail_nav_back_button: {}
 });
 
 export const bottomNavigator = StyleSheet.create({

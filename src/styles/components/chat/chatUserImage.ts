@@ -1,7 +1,7 @@
 import {StyleSheet} from "react-native";
 import {COLOR_DARK_GREY, COLOR_GREEN, COLOR_RED, COLOR_WHITE} from "@/constants/Colors";
 
-export const messageUserImage = StyleSheet.create({
+export const chatUserImage = StyleSheet.create({
     container: {
         width: 56,
         height: 56,

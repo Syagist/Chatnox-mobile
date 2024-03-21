@@ -1,5 +1,5 @@
 import {User} from "@/interfaces/user/AuthState";
-import {MessageList} from "@/interfaces/message/Message";
+import {ChatList} from "@/interfaces/chat/Chat";
 
 export const BASE_API_URL = 'http://localhost:5000/';
 export const AUTH_API = `${BASE_API_URL}auth/login`;
@@ -31,9 +31,9 @@ export const user: User = {
         }
     ]
 }
-export const messageData: MessageList = {
+export const chatData: ChatList = {
     id: 1,
-    messageList: [
+    chatList: [
         {
             id: 1,
             unReadMessagesCount: 2,

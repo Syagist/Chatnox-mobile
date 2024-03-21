@@ -1,11 +1,11 @@
 import {User} from "@/interfaces/user/AuthState";
 
-export interface MessageList {
+export interface ChatList {
     id: number
-    messageList?: Array<MessageItem>
+    chatList?: Array<Chat>
 }
 
-export interface MessageItem {
+export interface Chat {
     id: number
     isGroup?: boolean,
     groupName?: string,
@@ -21,6 +21,6 @@ export interface Message {
     isUnset?: boolean
 }
 
-export interface MessageItemProps {
-    messageItem: MessageItem;
+export interface ChatProps {
+    chat: Chat;
 }
