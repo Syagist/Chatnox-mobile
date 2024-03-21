@@ -1,5 +1,5 @@
 import {StyleSheet} from "react-native";
-import {APP_LEFT_PADDING} from "@/constants/Sizes";
+import {APP_LEFT_PADDING, APP_RIGHT_PADDING} from "@/constants/Sizes";
 import {COLOR_WHITE} from "@/constants/Colors";
 
 export const appNavigator = StyleSheet.create({
@@ -27,7 +27,12 @@ export const appNavigator = StyleSheet.create({
         padding: 10,
         color: COLOR_WHITE
     },
-    message_detail_nav: {}
+    message_detail_nav: {
+        backgroundColor:COLOR_WHITE,
+        marginLeft:APP_LEFT_PADDING * -1,
+        marginRight:APP_RIGHT_PADDING * -1
+    },
+    message_detail_nav_back_button: {}
 });
 
 export const bottomNavigator = StyleSheet.create({

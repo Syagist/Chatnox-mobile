@@ -24,11 +24,12 @@ const Messages = () => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
     const navigateToSettingsPage = () => {
-        navigation.navigate('MessageDetail');
+        // navigation.navigate('MessageDetail');
     };
 
     const handleNotificationSettings = (item: MessageItem) => {
         console.log(item)
+
     };
 
     const handleSwipeLeft = (item: MessageItem) => {
@@ -81,7 +82,7 @@ const Messages = () => {
 
 
     return (
-        <ScrollView contentContainerStyle={globalStyles.scrollViewContainer}>
+        <View style={globalStyles.scrollViewContainer}>
             <View style={{
                 ...globalStyles.container,
                 ...messages.container
@@ -108,7 +109,7 @@ const Messages = () => {
                         }/>
                 </View>
             </View>
-        </ScrollView>
+        </View>
     );
 };
 

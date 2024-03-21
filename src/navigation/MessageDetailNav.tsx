@@ -20,14 +20,17 @@ interface MessageDetailNav {
 
 const MessageDetailNav = ({messageItem, onCall,onVideoCall}: MessageDetailNav) => {
     const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
+    console.log(messageItem)
 
     return (
         <View style={appNavigator.message_detail_nav}>
-            <MessageUserImage messageItem={messageItem}/>
-
-            <TouchableOpacity style={appNavigator.back_arrow_nav_btn} onPress={() => navigation.goBack()}>
+            <TouchableOpacity style={appNavigator.back_arrow_nav_btn}
+                              onPress={() => navigation.goBack()}>
                 <ArrowIcon color={COLOR_BLACK}/>
             </TouchableOpacity>
+            <MessageUserImage messageItem={messageItem}/>
+
+
         </View>
     )
 };

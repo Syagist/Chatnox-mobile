@@ -54,7 +54,7 @@ export const messageData: MessageList = {
             messages: [{text: 'lorem', time: 'today'}, {text: 'lorem2', time: 'yesterday'}]
         },
         {
-            id: 2,
+            id: 1918191,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
@@ -81,7 +81,7 @@ export const messageData: MessageList = {
             messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         },
         {
-            id: 2,
+            id: 177717,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
@@ -108,7 +108,7 @@ export const messageData: MessageList = {
             messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         },
         {
-            id: 2,
+            id: 8726,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
@@ -135,7 +135,7 @@ export const messageData: MessageList = {
             messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         },
         {
-            id: 2,
+            id: 1212,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
@@ -162,7 +162,7 @@ export const messageData: MessageList = {
             messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         },
         {
-            id: 2,
+            id: 221,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
@@ -189,7 +189,7 @@ export const messageData: MessageList = {
             messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         },
         {
-            id: 2,
+            id: 112,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
@@ -216,7 +216,7 @@ export const messageData: MessageList = {
             messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         },
         {
-            id: 2,
+                id: 299821,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
@@ -243,7 +243,7 @@ export const messageData: MessageList = {
             messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         },
         {
-            id: 2,
+            id: 88992,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',
@@ -270,7 +270,7 @@ export const messageData: MessageList = {
             messages: [{text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores debitis eaque error laborum laudantium quaerat quasi qui repellendus. Eaque eius id magnam perferendis, quibusdam sed soluta velit voluptatibus!', time: 'today'}, {text: '123123', time: 'yesterday'}]
         },
         {
-            id: 2,
+            id: 189,
             isGroup: true,
             isOnline: false,
             groupName:'Team Align',

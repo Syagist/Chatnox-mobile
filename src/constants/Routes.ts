@@ -34,7 +34,7 @@ export const authRoutes = [
 ]
 export const routes = [
     {
-        name: 'Messages',
+        name: 'Messsages',
         component: Messages
     },
     {
